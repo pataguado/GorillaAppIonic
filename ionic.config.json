@@ -1,0 +1,7 @@
+{
+  "name": "gorillaApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
