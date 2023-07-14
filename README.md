@@ -17,7 +17,11 @@ To install and run the application, follow these steps:
 4. npm install
 5. npm start
 
-## THIS IS A WORK IN PROGRESS
+## NOTES
 
+- The instructions screen will be displayed on the first launch of the app. If you want to see the instructions again, you can go to the local storage of your browser and delete the 'hasShownInstructions' entry.
+
+
+- Ion-slides and react-swiper were deprecated for the slider functionality in this app. Instead, a custom slider has been implemented using plain JavaScript.
 
 
