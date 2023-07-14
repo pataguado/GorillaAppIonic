@@ -1,4 +1,4 @@
-# Primate Promotes Ethical Primate Tourism
+# Primate Tourism App
 
 This is a work-in-progress application developed using Ionic and React. The app aims to promote ethical primate tourism and raise awareness about responsible interactions with primates.
 
