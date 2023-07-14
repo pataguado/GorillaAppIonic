@@ -23,8 +23,8 @@ const InfoData = ({ version }) => {
   };
 
   return (
-    <div className="flex flex-col">
-      <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center justify-center p-1">
+      <div className="flex flex-col items-center justify-center">
         <div className="circle">
           {version && version == 1 ? (
             <img src={monkey} alt="monkey" />
