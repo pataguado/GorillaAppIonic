@@ -1,0 +1,21 @@
+ion-menu {
+  --width: 100%;
+  --min-height: 100%;
+}
+
+.header-ios ion-toolbar:last-of-type {
+  --border-width: 0 0 0;
+}
+.selected {
+  background-color: #89fbab;
+}
+
+.active-link {
+  background-color: #89fbab;
+}
+
+.i-label {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-weight: 800;
+}
