@@ -12,3 +12,8 @@
   align-items: center;
   justify-content: center;
 }
+
+.no-bg{
+  background-color: transparent;
+}
+ion-content { --background: transparent;}
