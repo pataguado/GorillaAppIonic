@@ -102,7 +102,7 @@ const Menu = ({ appPages }) => {
           </IonList>
           <IonIcon slot="start" icon={logoTwitter} />
         </IonContent>
-        <IonFooter className="flex item-center justify-around p-3">
+        <IonFooter className="flex item-center justify-around p-3 ion-no-border">
           <a rel="facebook" href="https://facebook.com">
             <IonIcon
               slot="start"
