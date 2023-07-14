@@ -48,29 +48,39 @@ const Instructions = ({ onDismiss }) => {
   };
 
   return (
-    <IonApp className='overflow-hidden background'>
+    <IonApp className="overflow-hidden background">
       <IonContent
         ref={contentRef}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
-        <div className='instructions'>
-          <h1 className='text-white font-bold text-5xl text-center mx-16'>{text[counter]}</h1>
+        <div className="instructions">
+          <h1 className="text-white font-bold text-5xl text-center mx-16">
+            {text[counter]}
+          </h1>
         </div>
       </IonContent>
-      <IonFooter transparent className='flex item-center justify-between p-3 ion-no-border no-bg'>
+      <IonFooter
+        transparent
+        className="flex item-center justify-between p-3 ion-no-border no-bg"
+      >
         <IonButton
           onClick={handleBack}
           transparent
-          color='secondary'
-          fill='clear'
-          size='large'
+          color="secondary"
+          fill="clear"
+          size="large"
           className={`${counter === 0 ? 'opacity-0' : ''} font-bold m-3`}
         >
           Back
         </IonButton>
-        <IonButton onClick={handleNext} color='secondary' size='large' className='font-bold m-3'>
+        <IonButton
+          onClick={handleNext}
+          color="secondary"
+          size="large"
+          className="font-bold m-3"
+        >
           {counter < 3 ? 'Next' : 'Explore'}
         </IonButton>
       </IonFooter>

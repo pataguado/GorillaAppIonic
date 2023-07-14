@@ -33,8 +33,12 @@ const Menu = ({ appPages }) => {
   return (
     <>
       {/* Closed Menu */}
-      <IonHeader no-shadow className='ion-no-border'>
-        <IonToolbar color="primary-contrast ion-no-border" className="border-0" no-border>
+      <IonHeader no-shadow className="ion-no-border">
+        <IonToolbar
+          color="primary-contrast ion-no-border"
+          className="border-0"
+          no-border
+        >
           <IonButtons slot="start" className="">
             <IonButton
               onClick={handleSignOut}

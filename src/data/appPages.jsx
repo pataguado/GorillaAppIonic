@@ -12,31 +12,31 @@ export const appPages = [
   {
     title: 'Primate Info',
     url: '/page/primate-info',
-    component: 'HomePage',
+    component: 'PrimateInfo',
   },
   {
     title: 'Primate Guide',
     url: '/page/primate-guide',
-    component: 'HomePage',
+    component: 'PrimateGuide',
   },
   {
     title: 'My Sightings',
     url: '/page/my-sightings',
-    component: 'HomePage',
+    component: 'MySightings',
   },
   {
     title: 'My Account',
     url: '/page/my-account',
-    component: 'HomePage',
+    component: 'MyAccount',
   },
   {
     title: 'Feedback',
     url: '/page/feedback',
-    component: 'HomePage',
+    component: 'Feedback',
   },
   {
     title: 'Language',
     url: '/page/language',
-    component: 'HomePage',
+    component: 'Language',
   },
 ];
