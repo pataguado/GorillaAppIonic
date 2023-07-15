@@ -1,18 +1,10 @@
 import { IonContent, IonPage } from '@ionic/react';
-import Avatar from '../components/Avatar';
-import InfoDataList from '../components/InfoData/infoDataList';
+import Map from '../components/Map'
 const HomePage = () => {
-  const userProfile = {
-    name: 'Jamie Forsyth',
-    email: 'jamief@email.com',
-    profilePicture: 'src/assets/profile/Teresia.png',
-  };
-
   return (
-    <IonPage className="h-full p-12">
+    <IonPage className="h-full">
       <IonContent>
-        <Avatar {...userProfile} />
-        <InfoDataList />
+        <Map />
       </IonContent>
     </IonPage>
   );

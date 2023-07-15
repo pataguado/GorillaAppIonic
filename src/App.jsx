@@ -24,7 +24,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import Instructions from './pages/Instructions';
+import Instructions from './pages/Instruction1';
 
 setupIonicReact();
 

@@ -1,0 +1,13 @@
+/* Mobile devices (up to 767px width) */
+@media screen and (max-width: 767px) {
+    .map-container {
+      height: 50vh; /* Adjust the height value as needed */
+    }
+  }
+  
+  /* Larger screens (768px and above) */
+  @media screen and (min-width: 768px) {
+    .map-container {
+      height: 80vh; /* Adjust the height value as needed */
+    }
+  }
