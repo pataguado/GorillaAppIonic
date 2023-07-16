@@ -1,5 +1,5 @@
 import { IonContent, IonPage } from '@ionic/react';
-import Map from '../components/Map'
+import Map from '../components/Map';
 const HomePage = () => {
   return (
     <IonPage className="h-full">

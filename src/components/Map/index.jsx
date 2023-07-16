@@ -1,6 +1,19 @@
 import React, { useLayoutEffect, useState, useRef } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, useIonViewDidEnter } from '@ionic/react';
+import {
+  MapContainer,
+  TileLayer,
+  Marker,
+  Popup,
+  useMapEvents,
+} from 'react-leaflet';
+import {
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+  useIonViewDidEnter,
+} from '@ionic/react';
 import 'leaflet/dist/leaflet.css';
 
 const Map = () => {
@@ -48,38 +61,44 @@ const Map = () => {
 
   return (
     renderMap && (
-        <>
+      <>
         <IonHeader>
           <IonToolbar>
             <IonTitle>Map Page</IonTitle>
           </IonToolbar>
         </IonHeader>
-     
-          <div style={{ height: '100vh', width: '100%' }}>
-            <MapContainer center={[1.634541720929286, 110.04822147737534]} zoom={3} style={{ height: '100%', width: '100%' }} ref={mapContainerRef}>
-              <TileLayer
-                attribution='&copy; <a href="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              />
 
-              <AddMarkerToMap />
+        <div style={{ height: '100vh', width: '100%' }}>
+          <MapContainer
+            center={[1.634541720929286, 110.04822147737534]}
+            zoom={3}
+            style={{ height: '100%', width: '100%' }}
+            ref={mapContainerRef}
+          >
+            <TileLayer
+              attribution='&copy; <a href="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
 
-              {markers.map((marker, index) => (
-                <Marker key={index} position={[marker.lat, marker.lng]}>
-                  <Popup>{marker.name}</Popup>
-                </Marker>
-              ))}
+            <AddMarkerToMap />
 
-              {/* Display a new marker at the location of the last added marker */}
-              {newMarkerLocation && (
-                <Marker position={[newMarkerLocation.lat, newMarkerLocation.lng]}>
-                  <Popup>{newMarkerLocation.lat}, {newMarkerLocation.lng}</Popup>
-                </Marker>
-              )}
-            </MapContainer>
-          </div>
-       
-   </>
+            {markers.map((marker, index) => (
+              <Marker key={index} position={[marker.lat, marker.lng]}>
+                <Popup>{marker.name}</Popup>
+              </Marker>
+            ))}
+
+            {/* Display a new marker at the location of the last added marker */}
+            {newMarkerLocation && (
+              <Marker position={[newMarkerLocation.lat, newMarkerLocation.lng]}>
+                <Popup>
+                  {newMarkerLocation.lat}, {newMarkerLocation.lng}
+                </Popup>
+              </Marker>
+            )}
+          </MapContainer>
+        </div>
+      </>
     )
   );
 };

@@ -1,9 +1,9 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'gorillaApp',
-  webDir: 'dist',
+  appId: 'com.example.primate',
+  appName: 'Primate',
+  webDir: 'build',
   server: {
     androidScheme: 'https',
   },

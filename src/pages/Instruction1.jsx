@@ -47,10 +47,10 @@ const Instructions = ({ onDismiss }) => {
                 className="flex flex-col no-bg text-white font-bold text-5xl text-center p-12"
               >
                 {item.text}
-                <IonButton shape="round" className='mt-6' color='dark'>
-                See illustrated guidelines
+                <IonButton shape="round" className="mt-6" color="dark">
+                  See illustrated guidelines
                   <svg
-                className='px-1'
+                    className="px-1"
                     width="27"
                     height="28"
                     viewBox="0 0 27 28"

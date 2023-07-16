@@ -1,0 +1,6 @@
+{
+  "appId": "com.example.primate",
+  "appName": "Primate",
+  "webDir": "build",
+  "bundledWebRuntime": false
+}

@@ -24,6 +24,6 @@ To install and run the application, follow these steps:
 - The instructions screen will be displayed on the first launch of the app. If you want to see the instructions again, you can go to the local storage of your browser and delete the 'hasShownInstructions' entry.
 
 - Sections with conent are :
-      -HomePage
-      -Account
-      -Instructions
+  -HomePage
+  -Account
+  -Instructions
