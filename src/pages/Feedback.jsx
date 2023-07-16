@@ -1,10 +1,10 @@
 import { IonContent, IonPage } from '@ionic/react';
-
+import FeedbackForm from '../components/FeedbackForm';
 const Feedback = () => {
   return (
     <IonPage className="h-full p-12">
       <IonContent>
-        <h1>Feedback</h1>
+      <FeedbackForm />
       </IonContent>
     </IonPage>
   );
