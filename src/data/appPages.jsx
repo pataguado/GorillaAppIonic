@@ -7,7 +7,7 @@ export const appPages = [
   {
     title: 'Instructions',
     url: '/instructions',
-    component: 'Instruction1',
+    component: 'Instruction',
   },
   {
     title: 'Primate Info',

@@ -24,14 +24,13 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import Instructions from './pages/Instruction1';
+import Instructions from './pages/Instruction';
 
 setupIonicReact();
 
 const App = () => {
   // Show Instructions usestate and listeners
   const [showInstructions, setShowInstructions] = useState(true);
-  const shouldShowMenu = window.location.pathname !== '/instructions';
 
   useEffect(() => {
     const hasShownInstructions = localStorage.getItem('hasShownInstructions');
@@ -40,12 +39,15 @@ const App = () => {
     } else {
       setShowInstructions(true);
     }
-  }, [showInstructions]);
+  }, []);
 
   const handleInstructionsDismiss = () => {
     localStorage.setItem('hasShownInstructions', 'true');
     setShowInstructions(false);
   };
+
+  // Determine if the Menu should be shown based on the current path
+  const shouldShowMenu = !window.location.pathname.startsWith('/instructions');
 
   return (
     <>
